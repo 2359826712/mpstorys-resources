@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="MPStorys is a fan-made resource hub for MapleStory news, guides, events, tools, rankings, and wiki resources.">
+  <title>MPStorys Resources</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #080b12;
+      --panel: #111725;
+      --text: #f7f8fb;
+      --muted: #aeb7c8;
+      --accent: #ff6b20;
+      --accent-2: #ff9b3d;
+      --line: rgba(255, 255, 255, 0.1);
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at 18% 15%, rgba(255, 107, 32, 0.16), transparent 32rem),
+        linear-gradient(180deg, #0b0f18, var(--bg));
+      color: var(--text);
+      font: 16px/1.6 Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    main {
+      width: min(960px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 80px 0;
+    }
+
+    .hero {
+      padding: clamp(32px, 7vw, 72px);
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: rgba(17, 23, 37, 0.84);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.35);
+      backdrop-filter: blur(14px);
+    }
+
+    .eyebrow {
+      color: var(--accent-2);
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 8px 0 12px;
+      font-size: clamp(2.5rem, 8vw, 5.2rem);
+      line-height: 1;
+      letter-spacing: -0.055em;
+    }
+
+    .lead {
+      max-width: 720px;
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+    }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 30px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      min-height: 48px;
+      padding: 0 20px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      color: var(--text);
+      font-weight: 750;
+      text-decoration: none;
+      transition: transform 160ms ease, border-color 160ms ease;
+    }
+
+    .button.primary {
+      border-color: transparent;
+      background: linear-gradient(135deg, var(--accent), var(--accent-2));
+      color: #150b05;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      border-color: rgba(255, 255, 255, 0.28);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+      margin-top: 24px;
+    }
+
+    article {
+      padding: 24px;
+      border: 1px solid var(--line);
+      border-radius: 20px;
+      background: rgba(17, 23, 37, 0.68);
+    }
+
+    h2 {
+      margin: 0 0 8px;
+      font-size: 1.2rem;
+    }
+
+    article p {
+      margin: 0;
+      color: var(--muted);
+    }
+
+    footer {
+      margin-top: 28px;
+      color: var(--muted);
+      text-align: center;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 640px) {
+      main { padding: 24px 0; }
+      .hero { border-radius: 20px; }
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <div class="eyebrow">MapleStory community resource hub</div>
+      <h1>MPStorys</h1>
+      <p class="lead">
+        Discover MapleStory news, upcoming updates, events, practical guides,
+        player tools, rankings, and wiki resources in one organized community hub.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="https://mpstorys.com">Visit MPStorys</a>
+        <a class="button" href="https://github.com/2359826712/mpstorys-resources">View the repository</a>
+      </div>
+    </section>
+
+    <section class="grid" aria-label="MPStorys highlights">
+      <article>
+        <h2>News and events</h2>
+        <p>Follow official announcements, upcoming updates, maintenance notices, and limited-time events.</p>
+      </article>
+      <article>
+        <h2>Guides and tools</h2>
+        <p>Find practical guides, calculators, simulators, and other useful player resources.</p>
+      </article>
+      <article>
+        <h2>Rankings and wiki</h2>
+        <p>Explore rankings, progress information, and community-curated reference material.</p>
+      </article>
+      <article>
+        <h2>Multiple MapleStory games</h2>
+        <p>Coverage includes MapleStory, MapleStory Classic, MapleStory M, MapleStory Worlds, MapleStory N, and MapleStory Idle.</p>
+      </article>
+    </section>
+
+    <footer>MPStorys is a fan-made community platform and is not affiliated with Nexon.</footer>
+  </main>
+</body>
+</html>
